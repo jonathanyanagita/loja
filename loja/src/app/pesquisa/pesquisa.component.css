@@ -1,0 +1,26 @@
+.img-max{
+    height: 200px ; 
+    width: 200px ;
+}
+
+.div-da-vitrine{
+    max-height: 500px;
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: 10%;
+}
+
+div{
+    text-align: center;
+}
+
+div #itens-vitrine{
+    background-color: white;
+    padding: 10px 10px 5px;
+}
+
+.pesquisa{
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 2%;
+}

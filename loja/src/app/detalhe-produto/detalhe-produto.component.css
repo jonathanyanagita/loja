@@ -1,0 +1,27 @@
+img{
+    height: 300px;
+    width: 300px;
+}
+
+.band{
+    padding-left: 5%;
+    vertical-align: middle;
+}
+
+.imagem{
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+div{
+    background-color: #f8f9fa;
+}
+
+.principal{
+    padding-top: 5%;
+}
+
+.detalhes{
+    padding-top: 5%;
+    padding-left: 5%;
+}

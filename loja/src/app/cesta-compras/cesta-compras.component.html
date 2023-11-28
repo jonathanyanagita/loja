@@ -1,0 +1,56 @@
+<div class="row">
+
+  <div class="col-1">
+
+  </div>
+
+  <div class="col-10 tabela">
+
+    <h2>Carrinho</h2>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantidade</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of lista">
+          <td>
+            <img src="./assets/cliente{{item.codigo}}.jpg" width="50px;">
+          </td>
+          <td>{{item.titulo}}</td>
+          <td>{{item.preco}}</td>
+        </tr> 
+      </tbody>
+    </table>
+
+
+
+    <div class="row botoes">
+      <div class="col">      </div>
+
+      <div class="col">
+        <h3>Total: R$ 150,99</h3>
+      </div>
+    </div>
+
+    <div class="row botoes">
+      <div class="col">
+        <button (click)="limparCarrinho" type="button" class="btn btn-secondary">Limpar Carrinho</button>
+      </div>
+
+      <div class="col">
+        <button type="button" class="btn btn-secondary">Finalizar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+
+  </div>
+
+</div>

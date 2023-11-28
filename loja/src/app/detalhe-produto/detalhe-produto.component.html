@@ -1,0 +1,60 @@
+<div class="row">
+
+    <div class="col imagem">
+        <img src="assets/images/abbey-road.jpg" alt="">
+    </div>
+
+    <div class="col principal">
+        <h1 [(ngModel)]="obj.titulo">Abbey Road</h1>
+        <h2 [(ngModel)]="obj.artista">The Beatles</h2>
+        <div>
+            <h2 [(ngModel)]="obj.preco">R$ 50,99</h2>
+        </div>
+        <div>
+            <button (click)="addCarrinho()" type="button" class="btn btn-secondary"><i class="bi bi-cart-plus"></i>Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</div>
+<div class="row detalhes">
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Detalhes</a></li>
+            <li><a data-toggle="tab" href="#menu1">Sobre</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Faixas</h3>
+                <p>Come Together 4:21 <br>
+                    Something 3:03<br>
+                    Maxwell's Silver Hammer 3:27<br>
+                    Oh! Darling 3:27<br>
+                    Octopus's Garden 2:51<br>
+                    I Want You (She's So Heavy) 7:47<br>
+                    Here Comes The Sun 3:05<br>
+                    Because 2:46<br>
+                    You Never Give Me Your Money 4:02<br>
+                    Sun King 2:27<br>
+                    Mean Mr. Mustard 1:06<br>
+                    Polythene Pam 1:13<br>
+                    She Came In Through The Bathroom Window 1:57<br>
+                    Golden Slumbers 1:32<br>
+                    Carry That Weight 1:37<br>
+                    The End 2:20<br>
+                    Her Majesty 0:23</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>The Beatles</h3>
+                <p>The Beatles foi uma banda musical britânica de rock, formada na cidade de Liverpool em 1960. Com os
+                    integrantes John Lennon, Paul McCartney, George Harrison e Ringo Starr, o grupo tornou-se altamente
+                    reconhecido como o melhor e mais bem sucedido da era do rock. Enraizados no skiffle, beat e o rock
+                    and roll dos anos 1950, os Beatles mais tarde experimentaram com diversos gêneros, desde baladas pop
+                    e a música indiana até a música psicadélica e o hard rock, e incorporaram elementos clássicos de
+                    maneiras inovadoras. Em meados da década de 1960, a imensa popularidade da banda tornou-se conhecida
+                    como a "Beatlemania", mas conforme a música do grupo crescia em sofisticação, liderada pelos
+                    principais compositores Lennon e McCartney, seus membros começaram a ser percebidos como uma
+                    incorporação dos ideias compartilhados pelas revoluções socioculturais da era.</p>
+            </div>
+        </div>
+    </div>
+</div>
