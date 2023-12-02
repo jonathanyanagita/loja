@@ -1,6 +1,5 @@
 package com.lojabackend.lojabackend.models;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,7 +24,7 @@ public class ProdutoEntity {
 
     private int quantidade;
 
-    private String detalhes;
+    private String detalhe;
 
     private String sobre;
 
@@ -61,11 +60,11 @@ public class ProdutoEntity {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-    public String getDetalhes() {
-        return detalhes;
+    public String getDetalhe() {
+        return detalhe;
     }
-    public void setDetalhes(String detalhes) {
-        this.detalhes = detalhes;
+    public void setDetalhe(String detalhe) {
+        this.detalhe = detalhe;
     }
     public String getSobre() {
         return sobre;

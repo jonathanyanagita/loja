@@ -3,19 +3,27 @@
 <h2>Adicionar produto</h2>
 <div class="alert alert-info" *ngIf="mensagem.length>0">{{mensagem}}</div>
 
- <img src="./assets/images/{{obj.titulo}}.jpg" width="100px" *ngIf="obj.codigo>0"><br>
+ <!-- <img src="./assets/images/{{obj.titulo}}.jpg" width="100px" *ngIf="obj.codigo>0"><br> -->
 
 Codigo: <input type="number" [(ngModel)]="obj.codigo" class="form-control"><br>
+
 Titulo:<input type="text" [(ngModel)]="obj.titulo" class="form-control"><br>
+
 Artista:<input type="text" [(ngModel)]="obj.artista" class="form-control"> <br>
-<!-- Capa:<input type="text" [(ngModel)]="obj.img" class="form-control"> <br> -->
+<!-- Capa: -->
+<input type="text" [(ngModel)]="obj.img" class="form-control" hidden value="assets/images/{{obj.titulo}}.jpg"><br>
+
 Preço:<input type="text" [(ngModel)]="obj.preco" class="form-control"><br>
+
 Quantidade:<input type="text" [(ngModel)]="obj.quantidade" class="form-control"> <br>
+
 Detalhes:<input type="text" [(ngModel)]="obj.detalhe" class="form-control"> <br>
+
 Sobre:<input type="text" [(ngModel)]="obj.sobre" class="form-control"> <br>
+
 Palavra-chave:<input type="text" [(ngModel)]="obj.palavraChave" class="form-control"><br>
 
-<button (click)="addProduto()" class="btn btn-success">    Gravar</button>
+<button (click)="addProduto()" class="btn btn-success">    Gravar</button><br>
 
 <button (click)="delProduto()" class="btn btn-danger">    Remover</button>    
 

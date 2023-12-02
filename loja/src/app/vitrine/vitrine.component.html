@@ -1,17 +1,34 @@
 <div class="row bg-light text-black" id="itens-vitrine">
-    <div class="col-sm-4">
+    <div *ngFor="let item of lista" class="col-sm-4">
         <div class="div-da-vitrine" >
             <a href="/detalhe-produto">
              <img class="img-max" src="assets/images/kind-of-blues.jpg" alt=""></a>
         </div>        
-        <div><a href="/detalhe-produto">Kind of Blues</a></div>
+        <div><a href="/detalhe-produto/">{{newdata.titulo}}</a></div>
         <div class="row">
-            <div class="col border" id="itens-vitrine">R$ 50.99</div>
-            <div class="col border" id="itens-vitrine"><a href="/cesta-compras">Comprar</a></div>
+            <div class="col border" id="itens-vitrine">{{newdata.preco}}</div>
+            <div class="col border" id="itens-vitrine"><button (click)="addCesta()">Comprar</button></div>
         </div>
     </div>
 
-    <div class="col-sm-4">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr *ngFor="let item of lista">
+            <td>{{item.titulo}}</td>
+            <td>{{item.preco}}</td>
+          </tr> 
+        </tbody>
+      </table>
+
+    <!-- <div class="col-sm-4">
         <div class="div-da-vitrine">
             <a href="/detalhe-produto">
             <img class="img-max" src="assets/images/kid-a.jpg" alt=""></a>
@@ -108,7 +125,7 @@
                 <div class="col border" id="itens-vitrine">R$ 50.99</div>
                 <div class="col border" id="itens-vitrine"><a href="/cesta-compras">Comprar</a></div>
             </div>
-        </div>
-    </div>
+        </div>-->
+    </div> 
 
     <router-outlet></router-outlet>

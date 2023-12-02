@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CestaCompras } from './cesta-compras.model';
 import { CestaComprasService } from './cesta-compras.service';
+import { DetalheProduto } from '../detalhe-produto/detalhe-produto.model';
 
 @Component({
   selector: 'app-cesta-compras',
@@ -9,11 +10,15 @@ import { CestaComprasService } from './cesta-compras.service';
 })
 export class CestaComprasComponent {
 
-  lista :  CestaCompras[] = [];
+  lista :  DetalheProduto[] = [];
   mensagem : String = "";
   obj: CestaCompras = new CestaCompras();
 
   constructor(private cestaCompras : CestaComprasService){}
+
+  ngOnInit(){
+    this.cestaCompras.listar().subscribe();         
+  }   
 
   public listar(){
     try{

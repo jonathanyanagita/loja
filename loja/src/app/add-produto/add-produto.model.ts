@@ -15,7 +15,7 @@ export class AddProduto {
             this.codigo = obj.codigo;
             this.titulo = obj.titulo;
             this.artista = obj.artista;
-            this.img = obj.img;
+            this.img = "assets/images/{{obj.titulo}}.jpg";
             this.preco = obj.preco;
             this.quantidade = obj.quantidade;
             this.detalhe = obj.detalhe;

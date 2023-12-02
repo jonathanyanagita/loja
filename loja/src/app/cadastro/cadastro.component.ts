@@ -24,14 +24,9 @@ export class CadastroComponent {
 
   public gravar(){
     try{
-      if(this.obj.codigo==0){
         this.cadastroService.gravar(this.obj);
         this.mensagem = "Cliente gravado com sucesso!";
-      }  else {
-        this.cadastroService.alterar(this.obj);
-        this.mensagem = "Cliente alterado com sucesso!";
-      }      
-    }
+      }          
     catch{
       this.mensagem = "Ocorreu um erro, verifique!";
     }
